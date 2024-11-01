@@ -4,6 +4,9 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: #fff;
@@ -14,6 +17,7 @@ body{
   background-image: url(images/background.png);
   background-size: cover;
   background-position: center;
+
 }
 .container{
   padding: 10px 10%;
@@ -246,8 +250,61 @@ nav ul li a:hover::after{
 
 /* CSS for small screen */
 
+nav .fa-solid{
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
+    
     #header{
-        background-image: url();
+        background-image: url(images/cpbg.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;    
+    }
+    .header-text h1{
+        font-size: 20px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 20px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 20px;
+    }
+    .WorldLIT-col-1, .WorldLIT-col-2{
+        flex-basis: 100%;  
+    }
+    .WorldLIT-col-1{
+        margin-bottom: 30px;
+    }
+    .WorldLIT-col-2{
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 14px;
     }
 }
+
