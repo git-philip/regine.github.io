@@ -13,12 +13,14 @@
     <div class="container">
         <nav>
           <img src="images/logo.png" class="logo">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">My PoV</a></li>
-            <li><a href="#">World Lit</a></li>
-            <li><a href="#">Characters</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#WorldLIT">My PoV</a></li>
+            <li><a href="#Themes">World Lit</a></li>
+            <li><a href="#Collection">Characters</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu"></i>
         </nav>
         <div class="header-text">
           <p>LIT 2 - World Literature</p>
@@ -47,10 +49,10 @@
       <div class="Themes-list">
           <div>
             <i class="fa-solid fa-book-open"></i>
-              <h2>Mesopotamia</h2>
+              <h2>  Mesopotamia</h2>
               <p>Mesopotamian literature is like one of the oldest windows we have into human civilization. It includes works like The Epic of Gilgamesh, which is basically one of the first epic tales ever written. These texts are super valuable because they reveal what life was like thousands of years ago—how people thought about gods, kings, friendship, and even the afterlife.
                 What’s really interesting is how they use stories to explain big ideas, like dealing with mortality or understanding human flaws. Even though it’s ancient, Mesopotamian literature feels relatable in weird ways because it shows that people back then had similar struggles, dreams, and questions about life as we do now. It’s like a time capsule of human nature.</p>
-              <a href="#">Learn more</a>
+              <a href="https://en.wikipedia.org/wiki/Category:Mesopotamian_literature">> Learn more</a>
           </div>
           <div> 
             <i class="fa-solid fa-book-open"></i>
@@ -62,7 +64,7 @@
               Philosophers like Plato and Aristotle contributed significantly to literature through dialogues and treatises, shaping ideas about ethics, politics, and aesthetics. Their works remain influential today.
               
               Overall, Greek literature is characterized by its exploration of universal themes, blending mythology, philosophy, and human experience, making it timeless and relevant across generations.</p>
-            <a href="#">Learn more</a>
+            <a href="https://en.wikipedia.org/wiki/Greek_literature">> Learn more</a>
         </div>
         <div> 
           <i class="fa-solid fa-book-open"></i>
@@ -76,7 +78,7 @@
             Philosophical works by Seneca and Cicero explore ethics, politics, and rhetoric, influencing later thinkers and writers.
             
             Roman literature is characterized by its focus on realism, moral lessons, and the exploration of human emotions, providing a rich legacy that continues to resonate in literature today.</p>
-          <a href="#">Learn more</a>
+          <a href="https://www.worldhistory.org/Roman_Literature/">> Learn more</a>
       </div>
           <div>
             <i class="fa-solid fa-book-open"></i>
@@ -85,7 +87,7 @@
               Chinese literature is this huge, rich tradition that spans thousands of years, blending poetry, philosophy, and storytelling in ways that are really unique. From ancient texts like The Book of Songs to philosophical works by Confucius and Laozi, Chinese literature digs deep into themes of morality, family, nature, and the search for harmony. Then you’ve got classic novels like Journey to the West and Dream of the Red Chamber, which bring in adventure, fantasy, and drama that are still popular today.
               
               What’s especially cool is how Chinese literature often uses symbols, nature imagery, and cultural values to express ideas. There’s a big emphasis on balance, respect for tradition, and inner reflection, which gives it a peaceful but powerful vibe. It’s like a blend of poetry and philosophy, and you can learn so much about Chinese culture and history just from reading it.</p>
-            <a href="#">Learn more</a>
+            <a href="https://www.britannica.com/art/Chinese-literature">> Learn more</a>
         </div>
         <div> 
           <i class="fa-solid fa-book-open"></i>
@@ -99,7 +101,7 @@
             Modern Arabian literature reflects contemporary issues and experiences, with authors like Naguib Mahfouz, the first Arab Nobel laureate, exploring themes of identity, politics, and social change in works that resonate globally.
             
             Overall, Arabian literature is characterized by its rich narrative tradition, poetic beauty, and deep exploration of human experiences, making it a vital part of world literature.</p>
-          <a href="#">Learn more</a>
+          <a href="https://www.britannica.com/art/Arabic-literature">> Learn more</a>
       </div>
     <div> 
       <i class="fa-solid fa-book-open"></i>
@@ -113,7 +115,7 @@
         In modern literature, authors like Haruki Murakami blend surrealism with contemporary themes, while writers like Kenzaburō Ōe tackle complex social and philosophical issues.
         
         Overall, Japanese literature is characterized by its depth, aesthetic beauty, and exploration of universal themes like love, identity, and the human experience, making it a significant part of global literature.</p>
-      <a href="#">Learn more</a>
+      <a href="https://www.britannica.com/art/Japanese-literature">> Learn more</a>
   </div>
   <div> 
     <i class="fa-solid fa-book-open"></i>
@@ -127,7 +129,7 @@
       In addition to these texts, Norse literature includes skaldic poetry, characterized by its intricate meter and metaphorical language, often composed to praise kings and warriors.
       
       Overall, Norse literature is marked by its vivid storytelling, rich mythology, and exploration of themes such as heroism, fate, and the relationship between humans and the divine, making it a significant part of the Germanic literary tradition and world literature as a whole.</p>
-    <a href="#">Learn more</a>
+    <a href="https://www.britannica.com/art/German-literature">> Learn more</a>
 </div>
         <div>
           <i class="fa-solid fa-book-open"></i>
@@ -137,7 +139,7 @@
             Epic narratives like the Mahabharata and the Ramayana are not just stories; they’re full of moral lessons, complex characters, and profound themes like duty, righteousness, and the struggle between good and evil. The Bhagavad Gita, part of the Mahabharata, is particularly influential, addressing issues of life, death, and dharma (duty) in a way that still resonates today.
             
             Hindu literature also includes a rich tradition of poetry, like the works of poets such as Kalidasa, who beautifully depict love, nature, and human emotions. Overall, it’s a vibrant tapestry that offers insights into spirituality, ethics, and the human experience, making it relevant even in modern times.</p>
-          <a href="#">Learn more</a>
+          <a href="https://www.britannica.com/art/Indian-literature">> Learn more</a>
       </div>
       <div>
         <i class="fa-solid fa-book-open"></i>
@@ -149,7 +151,7 @@
           Epic tales like the story of Sinuhe offer insights into the life and values of ancient Egyptians, touching on themes of adventure, exile, and return. Poetry is also a significant part, with collections that express love, nature, and daily life.
           
           What’s fascinating is how much these texts reflect the culture, religion, and worldview of ancient Egyptians, showing their deep connection to the divine and the natural world. It’s like reading the thoughts and beliefs of a civilization that has shaped human history in profound ways.</p>
-        <a href="#">Learn more</a>
+        <a href="https://en.wikipedia.org/wiki/Egyptian_literature">> Learn more</a>
     </div>
     <div> 
       <i class="fa-solid fa-book-open"></i>
@@ -159,7 +161,7 @@
         The Romantic poets like Wordsworth and Keats brought nature and individual emotion to the forefront, while the Victorian era produced novels from authors like Dickens and Brontë that explored social issues and morality. The Modernist movement introduced innovative narrative techniques and themes of alienation, with writers like Virginia Woolf and T.S. Eliot pushing boundaries.
         
         English literature also delves into identity, class, and politics, with contemporary authors addressing modern issues like race, gender, and technology. Overall, it offers a mirror to society, allowing readers to connect with the past while exploring timeless themes that resonate today.</p>
-      <a href="#">Learn more</a>
+      <a href="https://www.britannica.com/art/English-literature">> Learn more</a>
   </div>
   <div> 
     <i class="fa-solid fa-book-open"></i>
@@ -171,7 +173,7 @@
       In the 20th century, Modernist writers like Proust and Camus explored existential themes and the human condition, often breaking traditional narrative forms. French literature also includes a strong tradition of poetry, with figures like Baudelaire and Rimbaud who experimented with language and imagery.
       
       Overall, French literature is notable for its depth, beauty, and ability to provoke thought, making it a cornerstone of world literature that continues to influence writers and readers globally.</p>
-    <a href="#">Learn more</a>
+    <a href="https://www.britannica.com/art/French-literature">> Learn more</a>
 </div>
 <div> 
   <i class="fa-solid fa-book-open"></i>
@@ -185,7 +187,7 @@
     Italian literature is also rich in drama, with playwrights like Luigi Pirandello and Carlo Goldoni contributing to the theatrical tradition.
     
     Overall, Italian literature is characterized by its exploration of human experience, aesthetic beauty, and philosophical depth, making it a vital part of the world literary canon.</p>
-  <a href="#">Learn more</a>
+  <a href="https://www.britannica.com/art/Italian-literature">> Learn more</a>
 </div>
       </div>
     </div>
@@ -389,12 +391,26 @@
               <a href="#"><i class="fa-solid fa-link"></i></a>
           </div>
       </div>
-      <a href="#"class="btn">See more</a>
+      <a href="https://en.wikipedia.org/wiki/World_literature"class="btn">See more</a>
     </div>
     <div class="copyright">
          <p> Copyright © Regine N. De Leon <i class="fa-solid fa-heart"></i> | BSIT-CT 2A | 2024
          </p>
     </div>
  </div>
+
+ <script>
+
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemeu.style.right = "0"
+    }
+    function closemenu(){
+      sidemeu.style.right = "-200px"
+    }
+
+ </script>
   </body>
 </html>
